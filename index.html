@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة الطعام</title>
+<link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDropdown(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.classList.toggle('show');
+    }
+    </script>
+</head>
+<body>
+<div class="menu-container">
+    <header>
+        <img src="./images/لوجو المطعم.png" alt="لوجو المطعم" class="restaurant-logo">
+    </header>
+
+    <div class="menu-container">
+        <header>
+            <h1>قائمة الطعام</h1>
+        </header>
+
+        <section class="menu-section">
+            <div class="section-title" onclick="toggleDropdown('fish')">
+                <h2>🐟 الأسماك</h2>
+            </div>
+            <div class="dropdown-content" id="fish">
+                <div class="menu-item">
+                    <img src="./images/fish_images/دينيس مقلي.jpg" class="menu-img" alt="دينيس مشوي">
+                        <p>دينيس مقلي / مشوي</p>
+                        <span>₪120</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/fish_images/لبراك مقلي.jpg" class="menu-img" alt="لبراك">
+                        <p>لبراك مقلي / مشوي</p>
+                        <span>₪120</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/fish_images/مشكل فواكه بحر.jpg" class="menu-img" alt="فواكه بحر">
+                        <p>مشكل فواكة بحر مقلي / مطبوخ</p>
+                        <span>₪140</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/fish_images/روس كليماري مقلي.jpg" class="menu-img" alt="روس كليماري">
+                        <p>روس كيلماري مقلي / مطبوخ</p>
+                        <span>₪120</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/fish_images/كليماري مقلي.jpg" class="menu-img" alt="فواكه بحر">
+                        <p> كليماري مقلي / مطبوخ</p>
+                        <span>₪120</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/fish_images/شرمس كليماري نص نص.jpg" class="menu-img" alt="شرمس كليماري نص نص">
+                        <p> شرمس كليماري نص نص</p>
+                        <span>₪120</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/fish_images/صدف مبطوخ.jpg" class="menu-img" alt="صدف مطبوخ">
+                        <p> صدف مطبوخ</p>
+                        <span>₪120</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/fish_images/سلمون.jpg" class="menu-img" alt="سلمون">
+                        <p> سلمون</p>
+                        <span>₪120</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/fish_images/شرمس مقلي.jpg" class="menu-img" alt="شرمس مقلي / مطبوخ">
+                        <p> شرمس مقلي / مطبوخ</p>
+                        <span>₪120</span>
+                </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="section-title" onclick="toggleDropdown('meat')">
+                <h2>🥩 اللحوم</h2>
+            </div>
+            <div class="dropdown-content" id="meat">
+                <div class="menu-item">
+                    <img src="./images/meat/اضلاع خروف.jpg" class="menu-img" alt="أضلاع خروف">
+                        <p>أضلاع خروف</p>
+                        <span>₪140</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/meat/اسياخ خروف.jpg" class="menu-img" alt="أسياخ خروف">
+                        <p>أسياخ خروف</p>
+                        <span>₪130</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/meat/ستيك انتركوت.jpg" class="menu-img" alt="ستيك انتركوت">
+                        <p>ستيك انتركوت</p>
+                        <span>₪140</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/meat/ستيك فيليه.jpg" class="menu-img" alt="ستيك فيليه">
+                        <p>ستيك فيليه</p>
+                        <span>₪140</span>
+                </div>
+                <!-- بدون ضلع -->
+                <div class="menu-item">
+                    <img src="./images/meat/مشكل سيخ خروف سيخ كباب سيخ برجيت.jpg" class="menu-img" alt="مشكل سيخ خروف سيخ برجيت سيخ كباب">
+                        <p>مشكل سيخ خروف سيخ برجيت سيخ كباب</p>
+                        <span>₪130</span>
+                </div>
+                <!-- مع ضلع -->
+                <div class="menu-item">
+                    <img src="./images/meat/مشكل خروف ضلع برجيت كباب.jpg" class="menu-img" alt="مشكل سيخ خروف ضلع سيخ برجيت سيخ كباب">
+                        <p>مشكل سيخ خروف ضلع سيخ برجيت سيخ كباب</p>
+                        <span>₪140</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/meat/مشكل ضلع فيليه خروف انتركوت.jpg" class="menu-img" alt="مشكل ضلع فيليه خروف انتركوت">
+                        <p>مشكل ضلع فيليه خروف انتركوت</p>
+                        <span>₪150</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/meat/برجيت مشوي.jpg" class="menu-img" alt="برجيت">
+                        <p>برجيت</p>
+                        <span>₪100</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/meat/شنيتسل.jpg" class="menu-img" alt="شنيتسل">
+                        <p>شنيتسل</p>
+                        <span>₪100</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/meat/كباب.jpg" class="menu-img" alt="كباب">
+                        <p>كباب</p>
+                        <span>₪100</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/meat/صدر دجاج.jpg" class="menu-img" alt="صدر دجاج">
+                        <p>صدر دجاج</p>
+                        <span>₪100</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="section-title" onclick="toggleDropdown('kids')">
+                <h2>🍔 وجبات الأطفال</h2>
+            </div>
+            <div class="dropdown-content" id="kids">
+                <div class="menu-item">
+                    <img src="./images/kids meal/شنيتسلونيم.jpg" class="menu-img" alt="شنيتسلونيم">
+                        <p>شنيتسلونيم</p>
+                        <span>₪80</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/kids meal/برجر.jpg" class="menu-img" alt="برجر">
+                        <p>برجر</p>
+                        <span>₪50</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/kids meal/معكرونة.jpg" class="menu-img" alt="معكرونة spaghetti">
+                        <p>معكرونة spaghetti</p>
+                        <span>₪50</span>
+                </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="section-title" onclick="toggleDropdown('drinks')">
+                <h2>🥤 المشروبات</h2>
+            </div>
+            <div class="dropdown-content" id="drinks">
+                <div class="menu-item">
+                    <img src="./images/drinks/ليمونادا.jpg" class="menu-img" alt="ليمونادة">
+                        <p>ليمونادة</p>
+                        <span>₪25</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/drinks/كولا كبير.jpg" class="menu-img" alt="كولا">
+                        <p>كولا كبيرة</p>
+                        <span>₪20</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/drinks/مياه كبير.jpg" class="menu-img" alt="مياه كبير">
+                        <p>مياه كبير</p>
+                        <span>₪10</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/drinks/مشروب صغير.jpg" class="menu-img" alt="مشروب صغير">
+                        <p>مشروب صغير</p>
+                        <span>₪10</span>
+                </div>
+        </section>
+
+
+        <footer>
+            <p> ملاحظة :
+                <br>
+                    1- سلطات بدون وجبة 45
+                    <br>
+                        2- كل الوجبات تشمل جميع انواع السلطات
+            </p>
+            <p>📞 04-8427626 | 📍  مطعم ابو صلاح واولاده ، عين ماهل</p>
+        </footer>
+    </div>
+
+</body>
+</html>
