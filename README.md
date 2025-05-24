@@ -36,4 +36,4 @@ Each item is shown with an image, name, and price in a clean and attractive layo
 
 1. Clone or download the repository:
    ```bash
-   git clone [https://github.com/hasonateto12/restaurant-menu.git](https://github.com/hasonateto12/Resturant_menu)
+   https://github.com/hasonateto12/Resturant_menu
